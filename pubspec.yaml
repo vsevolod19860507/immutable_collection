@@ -1,0 +1,14 @@
+name: immutable_collection
+description: Immutable collections for Dart, IList<E>, ISet<E>, IMap<K, V>.
+version: 0.0.1
+homepage: https://github.com/vr19860507/immutable_collection
+
+environment:
+  sdk: ">=2.8.1 <3.0.0"
+
+dependencies:
+  meta: ^1.1.8
+  collection: ^1.14.13
+
+dev_dependencies:
+  strict_analyzer: ^0.2.0
