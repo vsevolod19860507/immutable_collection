@@ -1,14 +1,6 @@
 # immutable_collection
 
-Immutable collections for Dart, IList<E>, ISet<E>, IMap<K, V>.
+Immutable collections, `IList<E>`, `ISet<E>`, `IMap<K, V>`. They all compare as value types.
+If you want classes that compare as value types, you might use [data classes and discriminated unions](https://pub.dev/packages/adt).
 
-<!-- ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference. -->

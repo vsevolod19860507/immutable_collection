@@ -1,13 +1,17 @@
 part of 'i_collection.dart';
 
+/// Immutable Set.
 class ISet<E> extends _ICollection<Set<E>>
     with
         _ImmutableIterableMixin<E, Set<E>>,
         _ImmutableSetMixin<E>,
         _MutableWithThrowSetMixin<E> {
+  /// Creates an ISet instance from [source].
+  /// Use only if you are sure that the [source] will not be modified in the future.
   @literal
   const ISet(Set<E> source) : super(source);
 
+  /// Creates an ISet instance from [source] by copying it.
   ISet.of(Iterable<E> source) : super(Set.of(source));
 }
 

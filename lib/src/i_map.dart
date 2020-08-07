@@ -1,14 +1,20 @@
 part of 'i_collection.dart';
 
+/// Immutable Map.
 class IMap<K, V> extends _ICollection<Map<K, V>>
     with _ImmutableMapMixin<K, V>, _MutableWithThrowMapMixin<K, V> {
+  /// Creates an IMap instance from [source].
+  /// Use only if you are sure that the [source] will not be modified in the future.
   @literal
   const IMap(Map<K, V> source) : super(source);
 
+  /// Creates an IMap instance from [source] by copying it.
   IMap.of(Map<K, V> source) : super(Map.of(source));
 }
 
-extension IIMapExtension<K, V> on Map<K, V> {
+/// Map Extension.
+extension IMapExtension<K, V> on Map<K, V> {
+  /// Calls [IMap.of] constructor.
   IMap<K, V> toIMap() => IMap.of(this);
 }
 

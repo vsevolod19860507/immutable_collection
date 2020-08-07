@@ -1,7 +1,11 @@
 part of 'i_collection.dart';
 
-extension IIterableExtension<E> on Iterable<E> {
+/// Iterable Extension.
+extension IterableExtension<E> on Iterable<E> {
+  /// Calls [IList.of] constructor.
   IList<E> toIList() => IList.of(this);
+
+  /// Calls [ISet.of] constructor.
   ISet<E> toISet() => ISet.of(this);
 }
 

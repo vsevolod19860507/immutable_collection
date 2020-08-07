@@ -1,13 +1,17 @@
 part of 'i_collection.dart';
 
+/// Immutable List.
 class IList<E> extends _ICollection<List<E>>
     with
         _ImmutableIterableMixin<E, List<E>>,
         _ImmutableListMixin<E>,
         _MutableWithThrowListMixin<E> {
+  /// Creates an IList instance from [source].
+  /// Use only if you are sure that the [source] will not be modified in the future.
   @literal
   const IList(List<E> source) : super(source);
 
+  /// Creates an IList instance from [source] by copying it.
   IList.of(Iterable<E> source) : super(List.of(source));
 }
 
