@@ -1,3 +1,7 @@
+## [0.1.0+2] - Aug 07, 2020
+
+* Fixed pubspec.yaml
+
 ## [0.1.0+1] - Aug 07, 2020
 
 * Fixed README.md
