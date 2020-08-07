@@ -1,14 +1,14 @@
 name: immutable_collection
 description: Immutable collections, IList<E>, ISet<E>, IMap<K, V>. They all compare as value types.
-version: 0.1.0+2
+version: 0.1.0+3
 homepage: https://github.com/vr19860507/immutable_collection
 
 environment:
   sdk: ">=2.9.0 <3.0.0"
 
 dependencies:
-  meta: ^1.2.2
-  collection: ^1.14.13
+  meta: ^1.0.0
+  collection: ^1.0.0
 
 dev_dependencies:
   strict_analyzer: ^0.3.0
