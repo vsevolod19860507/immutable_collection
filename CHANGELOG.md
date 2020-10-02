@@ -1,3 +1,10 @@
+## [0.2.0] - Oct 02, 2020
+
+* The minimum version of Dart SDK is now 2.10
+* ISet now uses HashSet internally
+* IMap now uses HashMap internally
+* Fixed example
+
 ## [0.1.0+3] - Aug 07, 2020
 
 * Fixed pubspec.yaml

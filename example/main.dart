@@ -1,9 +1,12 @@
+import 'dart:collection';
+
 import 'package:immutable_collection/immutable_collection.dart';
 
 void main() {
   // ***************************************************************************
   // IList<E>
   // ***************************************************************************
+  print('IList<E>');
   final list = [1, 2, 3];
   final ilist1 = IList(list);
   final ilist2 = IList.of(list);
@@ -28,7 +31,8 @@ void main() {
   // ***************************************************************************
   // ISet<E>
   // ***************************************************************************
-  final set = {1, 2, 3};
+  print('\nISet<E>');
+  final set = HashSet.of({1, 2, 3});
   final iset1 = ISet(set);
   final iset2 = ISet.of(set);
   final iset3 = set.toISet();
@@ -39,7 +43,7 @@ void main() {
   print(iset1); // {1, 2, 3, 4}
   print(iset2); // {1, 2, 3}
   print(iset3); // {1, 2, 3}
-  print(iset1 is Set<int>); // true
+  print(iset1 is HashSet<int>); // true
   print(set is ISet<int>); // false
   // iset1.addAll({1}); // Error: ISet<int> cannot be modified.
   print(iset1.hashCode); // 1143481854
@@ -52,7 +56,8 @@ void main() {
   // ***************************************************************************
   // IMap<K, V>
   // ***************************************************************************
-  final map = {1: 1, 2: 1, 3: 1};
+  print('\nIMap<K, V>');
+  final map = HashMap.of({1: 1, 2: 1, 3: 1});
   final imap1 = IMap(map);
   final imap2 = IMap.of(map);
   final imap3 = map.toIMap();
@@ -63,7 +68,7 @@ void main() {
   print(imap1); // {1: 1, 2: 1, 3: 1, 4: 1}
   print(imap2); // {1: 1, 2: 1, 3: 1}
   print(imap3); // {1: 1, 2: 1, 3: 1}
-  print(imap1 is Map<int, int>); // true
+  print(imap1 is HashMap<int, int>); // true
   print(map is IMap<int, int>); // false
   // imap1.addAll({1: 1}); // Error: IMap<int, int> cannot be modified.
   print(imap1.hashCode); // 1852417392

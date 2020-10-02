@@ -1,15 +1,15 @@
 part of 'i_collection.dart';
 
 /// Immutable Map.
-class IMap<K, V> extends _ICollection<Map<K, V>>
-    with _ImmutableMapMixin<K, V>, _MutableWithThrowMapMixin<K, V> {
+class IMap<K, V> extends _ICollection<HashMap<K, V>>
+    with _ImmutableHashMapMixin<K, V>, _MutableWithThrowHashMapMixin<K, V> {
   /// Creates an IMap instance from [source].
   /// Use only if you are sure that the [source] will not be modified in the future.
   @literal
-  const IMap(Map<K, V> source) : super(source);
+  const IMap(HashMap<K, V> source) : super(source);
 
   /// Creates an IMap instance from [source] by copying it.
-  IMap.of(Map<K, V> source) : super(Map.of(source));
+  IMap.of(Map<K, V> source) : super(HashMap.of(source));
 }
 
 /// Map Extension.
@@ -18,7 +18,8 @@ extension IMapExtension<K, V> on Map<K, V> {
   IMap<K, V> toIMap() => IMap.of(this);
 }
 
-mixin _ImmutableMapMixin<K, V> on _ICollection<Map<K, V>> implements Map<K, V> {
+mixin _ImmutableHashMapMixin<K, V> on _ICollection<HashMap<K, V>>
+    implements HashMap<K, V> {
   @override
   V operator [](Object key) => _source[key];
 
@@ -57,7 +58,7 @@ mixin _ImmutableMapMixin<K, V> on _ICollection<Map<K, V>> implements Map<K, V> {
   Iterable<V> get values => _source.values;
 }
 
-mixin _MutableWithThrowMapMixin<K, V> implements Map<K, V> {
+mixin _MutableWithThrowHashMapMixin<K, V> implements HashMap<K, V> {
   @alwaysThrows
   R _throw<R>() {
     throw UnsupportedError('IMap<$K, $V> cannot be modified.');
