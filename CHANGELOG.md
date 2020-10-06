@@ -1,3 +1,7 @@
+## [0.2.0+3] - Oct 06, 2020
+
+* Fixed README.md
+
 ## [0.2.0+2] - Oct 06, 2020
 
 * Fixed README.md
