@@ -1,6 +1,6 @@
 name: immutable_collection
 description: Immutable collections, IList<E>, ISet<E>, IMap<K, V>. They all compare as value types.
-version: 0.2.0+1
+version: 0.2.0+2
 homepage: https://github.com/vr19860507/immutable_collection
 
 environment:
