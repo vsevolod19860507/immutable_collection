@@ -8,6 +8,9 @@ class IMap<K, V> extends _ICollection<HashMap<K, V>>
   @literal
   const IMap(HashMap<K, V> source) : super(source);
 
+  /// Creates an empty IMap instance.
+  IMap.empty() : super(HashMap.of({}));
+
   /// Creates an IMap instance from [source] by copying it.
   IMap.of(Map<K, V> source) : super(HashMap.of(source));
 }

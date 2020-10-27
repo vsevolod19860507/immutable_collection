@@ -11,6 +11,10 @@ class IList<E> extends _ICollection<List<E>>
   @literal
   const IList(List<E> source) : super(source);
 
+  /// Creates an empty IList instance.
+  @literal
+  const IList.empty() : super(const []);
+
   /// Creates an IList instance from [source] by copying it.
   IList.of(Iterable<E> source) : super(List.of(source));
 }

@@ -11,9 +11,11 @@ void main() {
   final ilist1 = IList(list);
   final ilist2 = IList.of(list);
   final ilist3 = list.toIList();
+  const ilist4 = IList<int>.empty();
   print(ilist1); // [1, 2, 3]
   print(ilist2); // [1, 2, 3]
   print(ilist3); // [1, 2, 4]
+  print(ilist4); // []
   list.addAll([3, 4]);
   print(ilist1); // [1, 2, 3, 3, 4]
   print(ilist2); // [1, 2, 3]
@@ -36,9 +38,11 @@ void main() {
   final iset1 = ISet(set);
   final iset2 = ISet.of(set);
   final iset3 = set.toISet();
+  final iset4 = ISet<int>.empty();
   print(iset1); // {1, 2, 3}
   print(iset2); // {1, 2, 3}
   print(iset3); // {1, 2, 3}
+  print(iset4); // {}
   set.addAll({3, 4});
   print(iset1); // {1, 2, 3, 4}
   print(iset2); // {1, 2, 3}
@@ -61,9 +65,11 @@ void main() {
   final imap1 = IMap(map);
   final imap2 = IMap.of(map);
   final imap3 = map.toIMap();
+  final imap4 = IMap<int, int>.empty();
   print(imap1); // {1: 1, 2: 1, 3: 1}
   print(imap2); // {1: 1, 2: 1, 3: 1}
   print(imap3); // {1: 1, 2: 1, 3: 1}
+  print(imap4); // {}
   map.addAll({3: 1, 4: 1});
   print(imap1); // {1: 1, 2: 1, 3: 1, 4: 1}
   print(imap2); // {1: 1, 2: 1, 3: 1}

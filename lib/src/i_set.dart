@@ -11,6 +11,9 @@ class ISet<E> extends _ICollection<HashSet<E>>
   @literal
   const ISet(HashSet<E> source) : super(source);
 
+  /// Creates an empty ISet instance.
+  ISet.empty() : super(HashSet.of({}));
+
   /// Creates an ISet instance from [source] by copying it.
   ISet.of(Iterable<E> source) : super(HashSet.of(source));
 }

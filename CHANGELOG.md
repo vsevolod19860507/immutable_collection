@@ -1,3 +1,8 @@
+## [0.2.1] - Oct 27, 2020
+
+* Added `IList.empty()`, `ISet.empty()`, `IMap.empty()` constructors
+* Updated example
+
 ## [0.2.0+3] - Oct 06, 2020
 
 * Fixed README.md
