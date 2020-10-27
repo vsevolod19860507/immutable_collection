@@ -1,3 +1,7 @@
+## [0.2.1+1] - Oct 27, 2020
+
+* Fixed CHANGELOG.md
+
 ## [0.2.1] - Oct 27, 2020
 
 * Added `IList.empty()`, `ISet.empty()`, `IMap.empty()` constructors
@@ -42,6 +46,6 @@
 * Fixed README.md
 * Internal fixes.
 
-## [0.0.1] - TODO: Aug 05, 2020
+## [0.0.1] - Aug 05, 2020
 
 * Initial version.
