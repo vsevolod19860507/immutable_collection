@@ -1,3 +1,7 @@
+## [0.2.1+2] - Dec 04, 2020
+
+* Internal fixes
+
 ## [0.2.1+1] - Oct 27, 2020
 
 * Fixed CHANGELOG.md

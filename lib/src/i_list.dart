@@ -7,7 +7,8 @@ class IList<E> extends _ICollection<List<E>>
         _ImmutableListMixin<E>,
         _MutableWithThrowListMixin<E> {
   /// Creates an IList instance from [source].
-  /// Use only if you are sure that the [source] will not be modified in the future.
+  /// Use only if you are sure that the [source] will not be modified
+  /// in the future.
   @literal
   const IList(List<E> source) : super(source);
 

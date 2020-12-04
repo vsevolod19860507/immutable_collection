@@ -7,7 +7,8 @@ class ISet<E> extends _ICollection<HashSet<E>>
         _ImmutableHashSetMixin<E>,
         _MutableWithThrowHashSetMixin<E> {
   /// Creates an ISet instance from [source].
-  /// Use only if you are sure that the [source] will not be modified in the future.
+  /// Use only if you are sure that the [source] will not be modified
+  /// in the future.
   @literal
   const ISet(HashSet<E> source) : super(source);
 

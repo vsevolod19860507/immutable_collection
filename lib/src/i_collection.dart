@@ -11,10 +11,10 @@ part 'i_map.dart';
 
 @immutable
 abstract class _ICollection<T> {
-  final T _source;
-
   @literal
   const _ICollection(this._source) : assert(_source != null);
+
+  final T _source;
 
   @override
   int get hashCode =>

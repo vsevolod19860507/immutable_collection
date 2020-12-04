@@ -4,7 +4,8 @@ part of 'i_collection.dart';
 class IMap<K, V> extends _ICollection<HashMap<K, V>>
     with _ImmutableHashMapMixin<K, V>, _MutableWithThrowHashMapMixin<K, V> {
   /// Creates an IMap instance from [source].
-  /// Use only if you are sure that the [source] will not be modified in the future.
+  /// Use only if you are sure that the [source] will not be modified
+  /// in the future.
   @literal
   const IMap(HashMap<K, V> source) : super(source);
 
